@@ -1,0 +1,27 @@
+[
+    {
+        "id": 1,
+        "nome": "DevBurger Clássico",
+        "ingredientes": "Pão brioche, Carne 150g, Queijo cheddar, Alface americana, Tomate fresco, Molho especial"
+    },
+    {
+        "id": 2,
+        "nome": "Burger de Bacon",
+        "ingredientes": "Pão australiano, Carne 180g, Queijo prato, Bacon crocante, Cebola caramelizada, Molho barbecue"
+    },
+    {
+        "id": 3,
+        "nome": "Commit Veggie",
+        "ingredientes": "Pão integral, Burger de grão de bico, Queijo vegano, Rúcula, Tomate seco, Maionese de ervas"
+    },
+    {
+        "id": 4,
+        "nome": "Pull Request Chicken",
+        "ingredientes": "Pão de gergelim, Filé de frango empanado, Queijo coalho, Alface roxa, Picles, Molho de iogurte com ervas"
+    },
+    {
+        "id": 5,
+        "nome": "Debug Double Cheese",
+        "ingredientes": "Pão brioche, 2 Carnes 120g, 2 Queijos cheddar, Cebola roxa, Molho mostarda e mel, Bacon em tiras"
+    }
+]
