@@ -22,8 +22,8 @@
                 </button>
                 <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                     <div class="navbar-nav">
-                        <a class="nav-link active" aria-current="page" href="#">Cardápio</a>
-                        <a class="nav-link" href="./contato.html">Contato</a>
+                        <a class="nav-link active" aria-current="page" href="/">Cardápio</a>
+                        <a class="nav-link" href="/contato">Contato</a>
                         <a class="nav-link" href="http://localhost:3000/api/lanches">JSON - Lanches</a>
 
                     </div>
@@ -50,16 +50,16 @@
             <button type="submit" class="btn btn-primary my-3">Enviar</button>
         </form>
     </main>
-    
+
     <script>
         document.addEventListener('DOMContentLoaded', () => {
             fetch('/api/lanches')
-            .then(response => response.json())
-            .then(lanches => {
-                const cardapioDiv = document.getElementById('cardapio');
-                
-                lanches.forEach(lanche => {
-                    cardapioDiv.innerHTML += `
+                .then(response => response.json())
+                .then(lanches => {
+                    const cardapioDiv = document.getElementById('cardapio');
+
+                    lanches.forEach(lanche => {
+                        cardapioDiv.innerHTML += `
                     <div class="m-3 d-flex justify-content-center">
                         <div class="card m-3" style="width: 18rem;">
                             <div class="card-body">
@@ -70,15 +70,15 @@
                     </div>
                     </div>
                     `;
-                });
-            })          
-            .catch(error => console.error('Erro ao carregar o cardápio:', error));
+                    });
+                })
+                .catch(error => console.error('Erro ao carregar o cardápio:', error));
         }); 
-        </script>
-        <!--Bootstrap JS-->
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
-            integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
-            crossorigin="anonymous"></script>
+    </script>
+    <!--Bootstrap JS-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>
